@@ -109,41 +109,7 @@
   }
 
   function ensureIndexNewsLinks() {
-    var isEnglish = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
-    var target = relativePathTo(isEnglish ? 'en/news.html' : 'news.html');
-
-    [
-      { selector: '#desktop-menu .desktop-menu-nav', className: 'desktop-menu-link block py-4 text-stone-900 hover:text-accent transition-colors' },
-      { selector: '#mobile-menu .mobile-menu-nav', className: 'mobile-menu-link block py-3' }
-    ].forEach(function (config) {
-      var nav = document.querySelector(config.selector);
-      if (!nav) return;
-
-      var links = Array.from(nav.querySelectorAll('a[href]'));
-      var alreadyHasNews = links.some(function (link) {
-        return hrefFile(link.getAttribute('href')) === 'news.html';
-      });
-      if (alreadyHasNews) return;
-
-      var reference = links.find(function (link) {
-        var label = normalizeText(link.textContent).toLowerCase();
-        return label === 'kontakt' || label === 'contact';
-      });
-
-      var newsLink = document.createElement('a');
-      newsLink.className = reference ? reference.className : config.className;
-      if (reference && reference.getAttribute('style')) {
-        newsLink.setAttribute('style', reference.getAttribute('style'));
-      }
-      newsLink.href = target;
-      newsLink.textContent = 'News';
-
-      if (reference) {
-        nav.insertBefore(newsLink, reference);
-      } else {
-        nav.appendChild(newsLink);
-      }
-    });
+    // News wurde aus der Navigation entfernt – kein dynamisches Einfügen mehr.
   }
 
   function normalizeFooterLinks() {
@@ -321,7 +287,6 @@
     var isEnglish = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
 
     ensureStyles();
-    ensureIndexNewsLinks();
     normalizeFooterLinks();
     enhanceDesktopBurgerMenu(cur, isFleetPage, isEnglish);
     bindMenuCloseDelegation();
