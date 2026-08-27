@@ -25,7 +25,16 @@
       path = decodeURIComponent(path);
     } catch (e) {}
 
+    // Windows file:// delivers pathname like /C:/Users/... — strip the leading slash before the drive
+    if (/^\/[A-Za-z]:\//.test(path)) {
+      path = path.slice(1);
+    }
+
     var parts = path.split('/').filter(Boolean);
+    // Drop drive letter segment (C:) so relative math stays inside the project folder
+    if (parts.length && /^[A-Za-z]:$/i.test(parts[0])) {
+      parts.shift();
+    }
     if (parts.length && /\.[a-z0-9]+$/i.test(parts[parts.length - 1])) {
       parts.pop();
     }
@@ -33,8 +42,15 @@
   }
 
   function relativePathTo(targetPath) {
+    var target = String(targetPath || '').replace(/^\/+/, '');
+
+    // Same-folder targets: keep plain filename (critical for file:// on Windows)
+    if (target && target.indexOf('/') === -1) {
+      return target;
+    }
+
     var from = currentDirParts();
-    var to = String(targetPath || '').split('/').filter(Boolean);
+    var to = target.split('/').filter(Boolean);
     var shared = 0;
 
     while (shared < from.length && shared < to.length && from[shared] === to[shared]) {
@@ -117,20 +133,26 @@
       linkedin: 'https://www.linkedin.com/company/acm-air-charter-luftfahrtgesellschaft-mbh',
       instagram: 'https://www.instagram.com/acmaircharter/'
     };
+    var cur = currentPage();
+    var isHandling = cur.indexOf('handling') === 0;
     var pageTargets = {
-      'impressum': 'impressum.html',
-      'datenschutz': 'datenschutz.html',
+      'impressum': isHandling ? 'handling-impressum.html' : 'impressum.html',
+      'datenschutz': isHandling ? 'handling-datenschutz.html' : 'datenschutz.html',
       'owner management': 'aircraft-management.html',
       'aircraft management': 'aircraft-management.html',
       'maintenance': 'maintenance.html',
       'camo': 'maintenance.html',
       "that's acm": 'thats-acm.html',
       'das ist acm': 'thats-acm.html',
-      'karriere': 'karriere.html',
+      'karriere': isHandling ? 'handling-karriere.html' : 'karriere.html',
       'news': 'news.html',
-      'kontakt': 'kontakt.html',
-      'contact': 'kontakt.html'
+      'kontakt': isHandling ? 'handling-kontakt.html' : 'kontakt.html',
+      'contact': isHandling ? 'handling-kontakt.html' : 'kontakt.html'
     };
+
+    if (isHandling) {
+      socialTargets.linkedin = 'https://www.linkedin.com/company/acm-business-aviation-handling-gmbh';
+    }
 
     document.querySelectorAll('footer a[href]').forEach(function (link) {
       var ariaLabel = normalizeText(link.getAttribute('aria-label')).toLowerCase();

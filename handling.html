@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="ACM Business Aviation Handling GmbH: Ihr IS-BAH Stage II zertifizierter FBO am Baden-Airpark (Karlsruhe/Baden-Baden, FKB/EDSB). VIP-Handling, Crew-Services, Zoll, Betankung und Technik aus einer Hand." name="description"/><link href="/handling.html" rel="canonical"/><link href="/handling.html" hreflang="de" rel="alternate"/><link href="https://www.acmhandling.de/en/" hreflang="en" rel="alternate"/>
+<meta content="ACM Business Aviation Handling GmbH: Ihr IS-BAH Stage II zertifizierter FBO am Baden-Airpark (Karlsruhe/Baden-Baden, FKB/EDSB). VIP-Handling, Crew-Services, Zoll, Betankung und Technik aus einer Hand." name="description"/><link href="handling.html" rel="canonical"/><link href="handling.html" hreflang="de" rel="alternate"/><link href="https://www.acmhandling.de/en/" hreflang="en" rel="alternate"/>
 <meta content="index, follow" name="robots"/>
 <title>ACM Handling | Business Aviation Handling am Baden-Airpark (FKB/EDSB)</title>
 <link href="Fotos/Favicon_xs.webp" rel="icon" type="image/png"/>
@@ -2683,10 +2683,12 @@
 <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16 mb-14 lg:mb-16">
 <!-- Logo & Tagline -->
 <div class="lg:max-w-sm">
-<img alt="ACM Handling Logo" class="h-14 w-auto mb-6" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" src="Fotos/uploads/2026/04/Logo-final-weiss-rz_svg.svg" style="filter: brightness(0);"/>
+<a aria-label="ACM Handling Home" class="inline-block" href="handling.html">
+<img alt="ACM Handling Logo" class="h-20 w-auto mb-6" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" src="Fotos/ACM%20Handling/logo_handling.svg"/>
 <div style="display: none;">
 <span class="font-serif text-2xl text-stone-900 tracking-wide">ACM HANDLING</span>
 </div>
+</a>
 <p class="text-stone-500 text-sm leading-relaxed">
             Business Aviation Handling am Baden-Airpark &ndash; VIP-Handling, Crew-Services und technische Abfertigung aus einer Hand.
           </p>
@@ -2730,8 +2732,8 @@
 <div>
 <h4 class="text-stone-900 font-serif text-lg mb-4">Rechtliches</h4>
 <ul class="space-y-2.5 text-sm">
-<li><a class="hover:text-olive transition-colors" href="impressum.html">Impressum</a></li>
-<li><a class="hover:text-olive transition-colors" href="datenschutz.html">Datenschutz</a></li>
+<li><a class="hover:text-olive transition-colors" href="handling-impressum.html">Impressum</a></li>
+<li><a class="hover:text-olive transition-colors" href="handling-datenschutz.html">Datenschutz</a></li>
 <li><a class="hover:text-olive transition-colors" href="index.html">ACM AIR CHARTER</a></li>
 </ul>
 </div>
@@ -2766,10 +2768,15 @@
 </div>
 </div>
 <!-- Copyright -->
-<div class="pt-8 border-t border-stone-200">
-<p class="text-center text-stone-500 text-sm">
+<div class="pt-8 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-center sm:text-left text-stone-500 text-sm">
           &copy; 2026 ACM Business Aviation Handling GmbH. Alle Rechte vorbehalten.
         </p>
+<div class="flex items-center gap-4 text-sm">
+<a class="text-stone-500 hover:text-olive transition-colors" href="handling-impressum.html">Impressum</a>
+<span class="text-stone-300" aria-hidden="true">|</span>
+<a class="text-stone-500 hover:text-olive transition-colors" href="handling-datenschutz.html">Datenschutz</a>
+</div>
 </div>
 </div>
 </footer>
@@ -2826,7 +2833,7 @@
 <div class="flex items-start gap-3">
 <input class="mt-1 w-4 h-4 border-stone-300 rounded text-accent focus:ring-accent" id="flight-privacy" required="" type="checkbox"/>
 <label class="text-sm text-stone-600" for="flight-privacy">
-                Ich habe die <a class="text-accent hover:underline" href="datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                Ich habe die <a class="text-accent hover:underline" href="handling-datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
               </label>
 </div>
 <button class="w-full btn-filled" type="submit">
@@ -2892,7 +2899,7 @@
 <div class="flex items-start gap-3">
 <input class="mt-1 w-4 h-4 border-stone-300 rounded text-accent focus:ring-accent" id="maint-privacy" required="" type="checkbox"/>
 <label class="text-sm text-stone-600" for="maint-privacy">
-                Ich habe die <a class="text-accent hover:underline" href="datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                Ich habe die <a class="text-accent hover:underline" href="handling-datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
               </label>
 </div>
 <button class="w-full btn-filled" type="submit">
@@ -2947,7 +2954,7 @@
 <div class="flex items-start gap-3">
 <input class="mt-1 w-4 h-4 border-stone-300 rounded text-accent focus:ring-accent" id="mgmt-privacy" required="" type="checkbox"/>
 <label class="text-sm text-stone-600" for="mgmt-privacy">
-                Ich habe die <a class="text-accent hover:underline" href="datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                Ich habe die <a class="text-accent hover:underline" href="handling-datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
               </label>
 </div>
 <button class="w-full btn-filled" type="submit">
@@ -3022,7 +3029,7 @@
 <div class="flex items-start gap-3">
 <input class="mt-1 w-4 h-4 border-stone-300 rounded text-accent focus:ring-accent" id="career-privacy" required="" type="checkbox"/>
 <label class="text-sm text-stone-600" for="career-privacy">
-                Ich habe die <a class="text-accent hover:underline" href="datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                Ich habe die <a class="text-accent hover:underline" href="handling-datenschutz.html">Datenschutzerkl&auml;rung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
               </label>
 </div>
 <button class="w-full btn-filled" type="submit">
@@ -3577,6 +3584,7 @@
 <path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 </button>
-<script defer="" src="nav-active.js?v=20260717"></script>
+<script defer="" src="nav-active.js?v=20260827"></script>
+
 </body>
 </html>

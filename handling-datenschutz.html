@@ -4,9 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Kontakt & Anfahrt zur ACM Business Aviation Handling GmbH am Baden-Airpark (FKB/EDSB): Adresse, Telefon, SITA, Öffnungszeiten und Ihr Weg zum Business Aviation Terminal in Sektor D." name="description"/><link href="handling-kontakt.html" rel="canonical"/><link href="handling-kontakt.html" hreflang="de" rel="alternate"/><link href="https://www.acmhandling.de/en/" hreflang="en" rel="alternate"/>
+<meta content="Datenschutzerklärung der ACM Business Aviation Handling GmbH: Informationen zur Verarbeitung personenbezogener Daten, Cookies, Matomo und Ihren Rechten." name="description"/><link href="handling-datenschutz.html" rel="canonical"/><link href="handling-datenschutz.html" hreflang="de" rel="alternate"/><link href="https://www.acmhandling.de/en/" hreflang="en" rel="alternate"/>
 <meta content="index, follow" name="robots"/>
-<title>Kontakt & Anfahrt | ACM Handling am Baden-Airpark</title>
+<title>Datenschutz | ACM Handling am Baden-Airpark</title>
 <link href="Fotos/Favicon_xs.webp" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -587,10 +587,106 @@
     @media (max-width: 1024px) {
       .mobile-sticky-cta.visible { display: block; }
     }
+
+    .legal-body p,
+    .legal-body li {
+      color: #57534e !important;
+      font-size: 15px !important;
+      line-height: 1.7 !important;
+      font-weight: 400 !important;
+    }
+    .legal-body a { color: var(--color-olive) !important; }
+    .legal-body strong,
+    .legal-body b { color: #292524 !important; }
+    /* Wie acm.aero/impressum: Sand-Hintergrund, kein Weißblock */
+    .legal-content { background: transparent; }
+    .legal-body h2 {
+      font-size: clamp(1.75rem, 3vw, 2.5rem) !important;
+      line-height: 1.12 !important;
+      font-weight: 400 !important;
+      color: #1c1917 !important;
+    }
+
+    /* Legal pages: light header + visible nav like acm.aero/impressum */
+    body.legal-page #header {
+      background: rgba(255, 255, 255, 0.97) !important;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    body.legal-page .header-top-right { color: rgba(28, 25, 23, 0.85) !important; }
+    body.legal-page .header-nav-link { color: rgba(28, 25, 23, 0.8) !important; }
+    body.legal-page .header-nav-link:hover { color: rgb(28, 25, 23) !important; }
+    body.legal-page .header-link-button {
+      color: rgba(28, 25, 23, 0.85) !important;
+      background: rgba(0, 20, 65, 0.04) !important;
+      border: 1px solid rgba(28, 25, 23, 0.12) !important;
+      box-shadow: none;
+    }
+    body.legal-page .header-link-button:hover {
+      color: rgb(28, 25, 23) !important;
+      background: rgba(0, 20, 65, 0.08) !important;
+    }
+    /* Gleiches Header-Logo wie Handling-Seiten, dunkel auf hellem Header */
+    body.legal-page .acm-logo { filter: brightness(0) invert(0) !important; }
+    body.legal-page .header-logo-text { color: rgb(28, 25, 23) !important; }
+    body.legal-page .header-logo-subtext { color: rgba(28, 25, 23, 0.7) !important; }
+    body.legal-page .header-divider-line {
+      display: none !important;
+      height: 0 !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    /* Schriftfarben wie acm.aero/impressum: stone-600 / stone-900 */
+    body.legal-page,
+    body.legal-page p {
+      color: #57534e !important;
+    }
+    body.legal-page #header .header-nav-row {
+      height: auto !important;
+      overflow: visible !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      padding-bottom: 1.25rem !important;
+    }
+    body.legal-page #header #desktop-nav {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+    body.legal-page .header-desktop-menu-btn {
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+    body.legal-page .header-mobile-btn {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      color: rgb(28, 25, 23) !important;
+    }
+    body.legal-page .legal-title {
+      font-size: clamp(2.25rem, 5vw, 3.5rem) !important;
+      line-height: 1.05 !important;
+      font-weight: 300 !important;
+      color: #1c1917 !important;
+    }
+    body.legal-page .legal-content {
+      padding-top: 11rem !important;
+    }
+    @media (min-width: 1024px) {
+      body.legal-page .legal-content {
+        padding-top: 13rem !important;
+      }
+    }
+
 </style>
 <link href="mobile-qa.css" rel="stylesheet"/>
 </head>
-<body class="font-sans text-stone-800 antialiased">
+<body class="font-sans text-stone-800 antialiased legal-page">
 <!-- HEADER -->
 <header class="fixed top-0 left-0 right-0 z-50 w-full" id="header">
 <div class="w-full px-6 sm:px-8 lg:px-10">
@@ -602,11 +698,11 @@
 </button>
 <div class="header-top-right hidden lg:flex absolute right-0 items-center gap-6">
 <div class="header-lang-switcher flex items-center gap-1 text-sm">
-<a class="header-lang-link header-lang-active" data-lang="de" href="handling-kontakt.html">DE</a>
+<a class="header-lang-link header-lang-active" data-lang="de" href="handling-datenschutz.html">DE</a>
 <span aria-hidden="true" class="header-lang-sep">|</span>
 <a class="header-lang-link" data-lang="en" href="https://www.acmhandling.de/en/">EN</a>
 </div>
-<a class="header-link-button whitespace-nowrap" href="#anfrage">Kontakt aufnehmen</a>
+<a class="header-link-button whitespace-nowrap" href="handling-kontakt.html#anfrage">Kontakt aufnehmen</a>
 </div>
 <a aria-label="ACM Handling Home" class="acm-logo-link hidden lg:block" href="handling.html">
 <img alt="ACM Handling Logo" class="acm-logo h-12 lg:h-14 w-auto transition-opacity duration-300" id="header-logo-img" onerror="this.style.display='none'; const f = document.getElementById('header-logo-fallback'); if(f) f.style.display='flex';" src="Fotos/uploads/2026/04/Logo-final-weiss-rz_svg.svg" style="object-fit: contain; max-width: 160px;"/>
@@ -679,485 +775,91 @@
 <svg fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </button>
 <main>
-<!-- ============================================
-         1. HERO
-         ============================================ -->
-<section class="relative w-full h-[80vh] min-h-[540px] max-h-[850px] overflow-hidden" id="hero">
-<img alt="ACM Handling &ndash; Kontakt und Anfahrt am Baden-Airpark" class="absolute inset-0 w-full h-full object-cover object-left" src="Fotos/ACM%20Handling/Handling_Kontakt.JPG"/>
-<div class="hero-overlay absolute inset-0"></div>
-<div class="streamlines-container absolute inset-0 pointer-events-none" style="z-index: 15;">
-<div class="streamline streamline-1"></div>
-<div class="streamline streamline-2"></div>
-<div class="streamline streamline-3"></div>
-<div class="streamline streamline-4"></div>
-<div class="streamline streamline-5"></div>
-</div>
-<div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20" style="padding-bottom: 5rem;">
-<h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-white font-light mb-6 fade-in-up fade-in-up-delay-1" style="text-shadow: 0 2px 16px rgba(0,0,0,0.45), 0 0 40px rgba(0,0,0,0.2);">
-          Kontakt &amp; Anfahrt.
-        </h1>
-<p class="text-white/80 text-lg max-w-2xl mx-auto mb-10 leading-relaxed fade-in-up fade-in-up-delay-1" style="font-size: 17px !important; color: rgba(255,255,255,0.85) !important; text-shadow: 0 1px 10px rgba(0,0,0,0.4), 0 0 30px rgba(0,0,0,0.15);">
-          Unser Team im ACM Business Aviation Terminal ist für Sie da. Sprechen Sie uns an &ndash; wir organisieren Ihr Handling am Baden-Airpark (FKB/EDSB).
-        </p>
-<div class="flex flex-wrap justify-center gap-4 fade-in-up fade-in-up-delay-2">
-<a class="btn-overlay-white" href="#kontaktdaten">Kontaktdaten</a>
-<a class="btn-overlay-white" href="#ansprechpartner">Ansprechpartner</a>
-<a class="btn-overlay-white" href="#anfahrt">Ihr Weg zu uns</a>
-</div>
-</div>
-<div class="hero-proof-bar fade-in-up fade-in-up-delay-3">
-<div class="flex flex-wrap sm:flex-nowrap">
-<div class="proof-badge">
-<div class="proof-badge-icon">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<span class="proof-badge-text">Mo&ndash;Fr 07&ndash;22 Uhr</span>
-</div>
-<div class="proof-badge">
-<div class="proof-badge-icon">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<span class="proof-badge-text">Sektor D</span>
-</div>
-<div class="proof-badge">
-<div class="proof-badge-icon">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<span class="proof-badge-text">VHF 131.655</span>
-</div>
-<div class="proof-badge">
-<div class="proof-badge-icon">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M11.42 15.17l-5.384 3.143A.75.75 0 015.106 18V6a.75.75 0 01.936-.72l5.384 3.143m0 6.747l5.384 3.143A.75.75 0 0017.894 18V6a.75.75 0 00-.936-.72L11.574 8.42m-.154 6.75V8.42" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<span class="proof-badge-text">SITA FKBACXH</span>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================
-         2. WARUM ACM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ ARBEITGEBERPROFIL
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 bg-white" id="kontaktdaten">
-<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="grid lg:grid-cols-2 gap-12 lg:gap-[7rem] items-center">
-<div class="scroll-reveal">
-<span class="section-label text-olive font-medium tracking-[0.2em] uppercase mb-6 block">Kontakt</span>
-<h2 class="font-serif text-stone-900 mb-8 leading-tight font-light">
-              So erreichen Sie uns.
-            </h2>
-<p class="text-stone-500 leading-relaxed mb-8">
-              Unser Team im ACM Business Aviation Terminal koordiniert Ihr Handling am Flughafen Karlsruhe/Baden-Baden (FKB/EDSB). Rufen Sie uns an oder schreiben Sie uns &ndash; wir kümmern uns um den Rest.
-            </p>
-<div class="space-y-5">
-<div class="flex items-start gap-4">
-<div class="w-11 h-11 flex items-center justify-center shrink-0" style="background: rgba(0, 20, 65, 0.04);">
-<svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="font-serif text-stone-800 mb-1" style="font-size: 1.1rem;">Adresse</h3>
-<p class="text-stone-500 leading-relaxed text-sm">ACM Business Aviation Handling GmbH<br/>Baden-Airport, Montreal Ave. D 415<br/>77836 Rheinm&uuml;nster, Deutschland</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-11 h-11 flex items-center justify-center shrink-0" style="background: rgba(0, 20, 65, 0.04);">
-<svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="font-serif text-stone-800 mb-1" style="font-size: 1.1rem;">Telefon &amp; Fax</h3>
-<p class="text-stone-500 leading-relaxed text-sm">Tel.: <a class="text-olive hover:text-olive-dark transition-colors" href="tel:+4972293022322">+49 7229 3022-322</a><br/>Fax: +49 7229 3022-321</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="w-11 h-11 flex items-center justify-center shrink-0" style="background: rgba(0, 20, 65, 0.04);">
-<svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="font-serif text-stone-800 mb-1" style="font-size: 1.1rem;">E-Mail &amp; SITA</h3>
-<p class="text-stone-500 leading-relaxed text-sm"><a class="text-olive hover:text-olive-dark transition-colors" href="mailto:info@acmhandling.de">info@acmhandling.de</a><br/>SITA: FKBACXH</p>
-</div>
-</div>
-</div>
-</div>
-<div class="scroll-reveal image-zoom-wrap">
-<img alt="ACM Business Aviation Terminal am Baden-Airpark" class="w-full h-[400px] lg:h-[550px] object-cover" loading="lazy" src="Fotos/ACM%20Handling/Handling_Kontaktdaten.JPG"/>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================
-         ANSPRECHPARTNER
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 bg-section-sand" id="ansprechpartner">
-<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="text-center mb-12 lg:mb-16 scroll-reveal">
-<img alt="" class="section-emblem h-[35px] w-auto mx-auto mb-4" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<span class="section-label text-olive font-medium tracking-[0.2em] uppercase mb-6 block">Ansprechpartner</span>
-<h2 class="font-serif text-stone-900 font-light">
-            Ihre Ansprechpartner.
-          </h2>
-<p class="text-stone-500 max-w-2xl mx-auto mt-6 leading-relaxed">
-            Direkte Kontakte für Handling-Anfragen, Operations und Terminal-Service am Baden-Airpark.
-          </p>
-</div>
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Ioannis Vasileiou" class="profile-card-image" src="Fotos/ACM%20Handling/Ioannis_Vasileiou.jpg" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Ioannis Vasileiou</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Handling</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Anika Friesen" class="profile-card-image" src="Fotos/ACM%20Handling/Anika_Friesen.jpg" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Anika Friesen</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Handling</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Sebastian Gruner" class="profile-card-image" src="Fotos/ACM%20Handling/Sebastian_Gruner.jpg" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Sebastian Gruner</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Handling</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Dane J&ouml;rger" class="profile-card-image" src="Fotos/ACM%20Handling/Dane_Joerger.jpg" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Dane J&ouml;rger</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Handling</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Marc Oser" class="profile-card-image" src="Fotos/Kontakt/Avatar_Mann.webp" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Marc Oser</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Ramp Agent / Security Manager</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Frank Sch&ouml;nle" class="profile-card-image" src="Fotos/Kontakt/Avatar_Mann.webp" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Frank Sch&ouml;nle</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Ramp Agent / Security / GSE Officer</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-<div class="profile-card scroll-reveal">
-<div class="profile-card-image-wrap">
-<img alt="Stephan Huber" class="profile-card-image" src="Fotos/Kontakt/Avatar_Mann.webp" style="border-radius: 0;"/>
-</div>
-<div class="p-5">
-<h3 class="font-serif text-stone-900 font-normal mb-1" style="font-size: 1.25rem;">Stephan Huber</h3>
-<span class="block mb-3" style="font-size: 11px !important; color: #999 !important; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Handling / Supervisor Ramp</span>
-<div class="space-y-1.5">
-<a class="contact-link block" href="tel:+4972293022322" style="font-size: 13px !important; color: var(--color-olive) !important;">+49 7229 3022-322</a>
-<span class="block" style="font-size: 13px !important; color: #78716c;">Fax: +49 7229 3022-321</span>
-<a class="contact-link block" href="mailto:info@acmhandling.de" style="font-size: 13px !important; color: var(--color-olive) !important;">info@acmhandling.de</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================
-         ÖFFNUNGSZEITEN & FREQUENZEN
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 bg-white" id="oeffnungszeiten">
-<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="text-center mb-16 lg:mb-20 scroll-reveal">
-<img alt="" class="section-emblem h-[35px] w-auto mx-auto mb-4" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<span class="section-label text-olive font-medium tracking-[0.2em] uppercase mb-6 block">Operations</span>
-<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-stone-800 font-light">
-            &Ouml;ffnungszeiten &amp; Frequenzen.
-          </h2>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-<!-- Öffnungszeiten -->
-<div class="scroll-reveal">
-<div class="flex items-start gap-4 mb-4">
-<div class="w-12 h-12 flex items-center justify-center bg-olive/5 shrink-0">
-<svg class="w-6 h-6 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="cert-title font-serif text-stone-800 font-normal">&Ouml;ffnungszeiten</h3>
-<p class="text-stone-500 leading-relaxed">
-                  Mo&ndash;Fr 07:00&ndash;22:00 Uhr. Randzeiten und Wochenende auf Anfrage (O/T O/R).
-                </p>
-</div>
-</div>
-</div>
-<!-- VHF-Frequenz -->
-<div class="scroll-reveal">
-<div class="flex items-start gap-4 mb-4">
-<div class="w-12 h-12 flex items-center justify-center bg-olive/5 shrink-0">
-<svg class="w-6 h-6 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M9.348 14.652a3.75 3.75 0 010-5.304m5.304 0a3.75 3.75 0 010 5.304m-7.425 2.121a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="cert-title font-serif text-stone-800 font-normal">Company Frequency</h3>
-<p class="text-stone-500 leading-relaxed">
-                  VHF 131.655 MHz &ndash; erreichbar f&uuml;r anfliegende Crews.
-                </p>
-</div>
-</div>
-</div>
-<!-- SITA -->
-<div class="scroll-reveal">
-<div class="flex items-start gap-4 mb-4">
-<div class="w-12 h-12 flex items-center justify-center bg-olive/5 shrink-0">
-<svg class="w-6 h-6 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="cert-title font-serif text-stone-800 font-normal">SITA</h3>
-<p class="text-stone-500 leading-relaxed">
-                  FKBACXH &ndash; f&uuml;r Handling-Requests und Movement-Messages.
-                </p>
-</div>
-</div>
-</div>
-<!-- IS-BAH -->
-<div class="scroll-reveal">
-<div class="flex items-start gap-4 mb-4">
-<div class="w-12 h-12 flex items-center justify-center bg-olive/5 shrink-0">
-<svg class="w-6 h-6 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<h3 class="cert-title font-serif text-stone-800 font-normal">IS-BAH Stage II</h3>
-<p class="text-stone-500 leading-relaxed">
-                  Zertifizierter FBO nach internationalem Sicherheitsstandard.
-                </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================
-         4. WORK AREAS
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 bg-section-sand" id="anfahrt">
-<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="text-center mb-16 lg:mb-20 scroll-reveal">
-<img alt="" class="section-emblem h-[35px] w-auto mx-auto mb-4" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<span class="section-label text-olive font-medium tracking-[0.2em] uppercase mb-6 block">Anfahrt</span>
-<h2 class="font-serif text-stone-900 font-light">
-            Ihr Weg zu uns.
-            </h2>
-<p class="text-stone-500 max-w-2xl mx-auto mt-6 leading-relaxed">
-            Sie finden uns im Sektor D des Baden-Airparks. So kommen Sie mit dem Auto direkt zu unserem Business Aviation Terminal.</p>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="area-card scroll-reveal">
-<h3 class="font-serif text-stone-900 font-normal mb-4" style="font-size: 1.85rem; line-height: 1.2;">Von der A5</h3>
-<p class="text-stone-500 leading-relaxed">
-              Nehmen Sie die Ausfahrt Nr. 51 Baden-Baden / Iffezheim und fahren Sie Richtung Iffezheim. An der Kreuzung B500 / B36 biegen Sie links Richtung H&uuml;gelsheim ab.
-            </p>
-</div>
-<div class="area-card scroll-reveal">
-<h3 class="font-serif text-stone-900 font-normal mb-4" style="font-size: 1.85rem; line-height: 1.2;">Von Rastatt</h3>
-<p class="text-stone-500 leading-relaxed">
-              Fahren Sie Richtung Iffezheim aus Rastatt heraus. Biegen Sie nicht nach Iffezheim ab, sondern fahren Sie &uuml;ber zwei Kreuzungen geradeaus Richtung H&uuml;gelsheim.
-            </p>
-</div>
-<div class="area-card scroll-reveal">
-<h3 class="font-serif text-stone-900 font-normal mb-4" style="font-size: 1.85rem; line-height: 1.2;">Ab H&uuml;gelsheim</h3>
-<p class="text-stone-500 leading-relaxed">
-              Kurz nach der Ortsausfahrt H&uuml;gelsheim weist ein Schild zum Baden-Airpark. Hier biegen Sie links ab auf das Flughafengel&auml;nde.
-            </p>
-</div>
-<div class="area-card scroll-reveal">
-<h3 class="font-serif text-stone-900 font-normal mb-4" style="font-size: 1.85rem; line-height: 1.2;">Im Sektor D</h3>
-<p class="text-stone-500 leading-relaxed">
-              Folgen Sie der Flughafenstra&szlig;e (Victoria Boulevard) geradeaus &uuml;ber den Kreisverkehr, bis Sie das Schild &bdquo;Business Aviation Terminal" sehen.
-            </p>
-</div>
-<div class="area-card scroll-reveal">
-<h3 class="font-serif text-stone-900 font-normal mb-4" style="font-size: 1.85rem; line-height: 1.2;">Zum Terminal</h3>
-<p class="text-stone-500 leading-relaxed">
-              Rechts in die Yellowknife Avenue, bis zum Stra&szlig;enende. Dem Linksknick auf die Montreal Avenue folgen &ndash; rechts sehen Sie die zwei gro&szlig;en wei&szlig;en ACM-Hallen. Dazwischen f&uuml;hrt ein &uuml;berdachter Weg zum Terminal.
-            </p>
-</div>
-<div class="area-card scroll-reveal">
-<h3 class="font-serif text-stone-900 font-normal mb-4" style="font-size: 1.85rem; line-height: 1.2;">Parken</h3>
-<p class="text-stone-500 leading-relaxed">
-              Sie k&ouml;nnen Ihr Auto gerne entlang der Montreal Avenue auf den Parkpl&auml;tzen abstellen. Von dort sind es nur wenige Schritte bis zu uns.
-            </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Fullwidth Banner: Bereiche ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Stellen -->
-<section class="relative h-[45vh] sm:h-[55vh] overflow-hidden acm-banner-zoom" id="car-promo-jobs">
-<img alt="ACM Business Aviation Terminal &ndash; Baden-Airpark Sektor D" class="w-full h-full object-cover" loading="lazy" src="Fotos/ACM%20Handling/Handling_Standort.JPG"/>
-<div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0, 20, 65, 0.4) 0%, rgba(0, 20, 65, 0.55) 50%, rgba(0, 13, 43, 0.65) 100%);"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10">
-<img alt="" class="section-emblem section-emblem-on-dark h-[35px] w-auto mx-auto mb-2" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white text-center px-6 font-light">
-          Willkommen am Baden-Airpark.
-        </h2>
-<a class="btn-overlay-white mt-4 inline-flex" href="https://www.google.com/maps/search/?api=1&amp;query=ACM+Business+Aviation+Handling+Montreal+Ave+D+415+Rheinm%C3%BCnster" rel="noopener noreferrer" target="_blank">
-          In Google Maps &ouml;ffnen
-        </a>
-</div>
-</section>
-<!-- ============================================
-         5. JOB LISTINGS
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 bg-section-sand" id="karte">
-<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="text-center mb-16 lg:mb-20 scroll-reveal">
-<img alt="" class="section-emblem h-[35px] w-auto mx-auto mb-4" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<span class="section-label text-olive font-medium tracking-[0.2em] uppercase mb-6 block">Standort</span>
-<h2 class="font-serif text-stone-900 font-light">
-            Auf der Karte.
-          </h2>
-<p class="text-stone-500 max-w-2xl mx-auto mt-6 leading-relaxed">
-            ACM Business Aviation Terminal, Montreal Ave. D 415, Baden-Airpark (Sektor D), 77836 Rheinm&uuml;nster.</p>
-</div>
-<div class="scroll-reveal">
-<div class="border border-stone-200 overflow-hidden bg-white" style="line-height: 0;">
-<iframe allowfullscreen="" aria-label="Karte: ACM Business Aviation Handling am Baden-Airpark" class="w-full" height="460" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=ACM+Business+Aviation+Handling+Montreal+Ave+D+415+77836+Rheinm%C3%BCnster&amp;output=embed" style="border:0;"></iframe>
-</div>
-<div class="text-center mt-8">
-<a class="btn-outline inline-flex items-center gap-2" href="https://www.google.com/maps/search/?api=1&amp;query=ACM+Business+Aviation+Handling+Montreal+Ave+D+415+Rheinm%C3%BCnster" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Route planen
-        </a>
-</div>
-</div>
-</div>
-</section>
-<!-- Fullwidth Banner: Stellen ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Haltung -->
-<section class="relative h-[45vh] sm:h-[55vh] overflow-hidden acm-banner-zoom" id="car-promo-culture">
-<img alt="ACM Business Aviation Handling &ndash; pers&ouml;nlicher Service" class="w-full h-full object-cover" loading="lazy" src="Fotos/ACM%20Handling/Handling_Willkommen.JPG"/>
-<div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0, 20, 65, 0.4) 0%, rgba(0, 20, 65, 0.55) 50%, rgba(0, 13, 43, 0.65) 100%);"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10">
-<img alt="" class="section-emblem section-emblem-on-dark h-[35px] w-auto mx-auto mb-2" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-white text-center px-6 font-light">
-          Wir freuen uns auf Sie.
-        </h2>
-<a class="btn-overlay-white mt-4 inline-flex" href="#anfrage">
-          Anfrage senden
-        </a>
-</div>
-</section>
-<!-- ============================================
-         7. EMPLOYER VALUES
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 bg-white" id="empfang">
-<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="grid lg:grid-cols-2 gap-12 lg:gap-[7rem] items-center">
-<div class="scroll-reveal image-zoom-wrap">
-<img alt="ACM Business Aviation Terminal &ndash; Empfang" class="w-full h-[400px] lg:h-[550px] object-cover" loading="lazy" decoding="async" src="Fotos/ACM%20Handling/Handling_Empfang.JPG"/>
-</div>
-<div class="scroll-reveal">
-<span class="section-label text-olive font-medium tracking-[0.2em] uppercase mb-6 block">Ihr Empfang</span>
-<h2 class="font-serif text-stone-900 mb-10 leading-tight font-light">
-              Pers&ouml;nlich empfangen.
-            </h2>
-<p class="text-stone-500 leading-relaxed mb-10">
-              Vom Parkplatz an der Montreal Avenue f&uuml;hrt ein &uuml;berdachter Weg direkt zu unserem Business Aviation Terminal. Hier erwartet Sie unser Team &ndash; und k&uuml;mmert sich um alles Weitere.
-            </p>
-<div class="space-y-8 mb-10">
-<div>
-<h4 class="font-serif text-stone-800 mb-2" style="font-size: 1.5rem; line-height: 1.2;">Direkter Vorfeldzugang</h4>
-<p class="text-stone-500 leading-relaxed">
-                  K&uuml;rzere und direktere Wege zum Vorfeld &ndash; ohne Umwege &uuml;ber das Hauptterminal.
-            </p>
-</div>
-<div>
-<h4 class="font-serif text-stone-800 mb-2" style="font-size: 1.5rem; line-height: 1.2;">Diskretion &amp; Ruhe</h4>
-<p class="text-stone-500 leading-relaxed">
-                  Ruher&auml;ume und Arbeitsbereiche f&uuml;r Crews sowie ein diskreter Empfang f&uuml;r Ihre Passagiere.
-                </p>
-</div>
-<div>
-<h4 class="font-serif text-stone-800 mb-2" style="font-size: 1.5rem; line-height: 1.2;">Rundum-Service</h4>
-<p class="text-stone-500 leading-relaxed">
-                  Zoll &amp; Immigration, Transfers, Catering und Betankung &ndash; koordiniert aus einer Hand.
-                </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================
-         8. FINAL CTA
-         ============================================ -->
-<section class="py-20 sm:py-28 lg:py-32 relative overflow-hidden" id="anfrage" style="background-color: rgb(250 248 245);">
-<div class="streamlines-container streamlines-dark absolute inset-0 pointer-events-none z-0">
-<div class="streamline streamline-1"></div>
-<div class="streamline streamline-2"></div>
-<div class="streamline streamline-3"></div>
-<div class="streamline streamline-4"></div>
-<div class="streamline streamline-5"></div>
-</div>
-<div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
-<img alt="" class="section-emblem h-[35px] w-auto mx-auto mb-4" height="35" src="Fotos/Emblem.svg" width="auto"/>
-<h2 class="font-serif text-stone-900 font-light mb-6 scroll-reveal">
-          Handling anfragen.
-        </h2>
-<p class="text-stone-600 mb-10 max-w-2xl mx-auto text-lg leading-relaxed scroll-reveal">
-          Teilen Sie uns Registrierung, Datum, Zeiten und Ihre gew&uuml;nschten Services mit &ndash; wir senden Ihnen umgehend eine Handling-Best&auml;tigung.
-        </p>
-<div class="flex flex-wrap justify-center gap-4 scroll-reveal">
-<a class="btn-primary" href="mailto:info@acmhandling.de?subject=Handling-Anfrage%20ACM%20Handling">
-            Anfrage per E-Mail
-          </a>
-<a class="btn-outline inline-flex items-center gap-2" href="tel:+4972293022322">
-<svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
-            +49 7229 3022-322
-          </a>
+<section class="content-section content-section--white legal-content pt-32 pb-24">
+<div class="max-w-3xl mx-auto px-6 sm:px-8">
+<h1 class="legal-title font-serif text-4xl text-stone-900 mb-8">Datenschutz</h1>
+<div class="legal-body text-stone-600 leading-relaxed space-y-6">
+<p>Wir freuen uns &uuml;ber den Besuch unserer Webseiten und Ihr Interesse an unserem Unternehmen und unseren Dienstleistungen. Der Schutz Ihrer pers&ouml;nlichen Daten ist f&uuml;r uns von gro&szlig;er Wichtigkeit. Unsere Datenschutzpraxis steht im Einklang mit den Bestimmungen der EU Datenschutz-Grundverordnung (EU-DSGVO) sowie weiterer Vorschriften des Datenschutzes im Internet.</p>
+<p>Sofern Sie uns pers&ouml;nliche Daten mitteilen, werden wir diese entsprechend den datenschutzrechtlichen Bestimmungen behandeln. Daten, die Sie uns per E-Mail senden, werden &uuml;ber unseren E-Mail-Provider in einer gesicherten Umgebung an uns weitergeleitet und nach Beantwortung umgehend gel&ouml;scht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+<p>Bitte beachten Sie bei der Korrespondenz &uuml;ber E-Mail, dass dies keine sichere Kommunikationsform darstellt und die Inhalte nicht vor dem unbefugten Zugriff Dritter gesch&uuml;tzt sind. F&uuml;r vertrauliche Nachrichten empfehlen wir den Postweg.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Personenbezogene Daten</h2>
+<p>Personenbezogene Daten sind Informationen, die R&uuml;ckschl&uuml;sse auf Ihre Identit&auml;t erm&ouml;glichen. Darunter fallen Informationen wie Ihr richtiger Name, Ihre Adresse, Postanschrift oder Telefonnummer.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Erhebung und Verarbeitung pers&ouml;nlicher Daten</h2>
+<p>In der Regel k&ouml;nnen Sie unsere Webseiten besuchen, ohne dass wir pers&ouml;nliche Daten von Ihnen ben&ouml;tigen.</p>
+<p>Aus technischen Gr&uuml;nden &uuml;bermittelt Ihr Internet-Browser bei jedem Zugriff auf unsere Webseiten folgende Daten an unseren Webserver:</p>
+<ul class="list-disc pl-6 space-y-2">
+<li>die aktuelle IP-Adresse des von Ihnen genutzten Internetanschlusses</li>
+<li>den Link, &uuml;ber den Sie unsere Webseite besuchen</li>
+<li>die Webseiten, die Sie innerhalb unseres Internetangebots besuchen sowie Datum und Uhrzeit Ihres Besuches</li>
+<li>das von Ihnen verwendete Betriebssystem, der Browsername und die Browserversion.</li>
+</ul>
+<p>Diese Daten werden anonym gespeichert und dienen ausschlie&szlig;lich statistischen Zwecken (z. B. zur Auswertung, wie h&auml;ufig die einzelnen Seiten unseres Angebots besucht werden) oder der technischen Netzwerk- und System&uuml;berwachung, um St&ouml;rungen im Serverbetrieb feststellen zu k&ouml;nnen (Logfiles).</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Einwilligungsvorbehalt</h2>
+<p>Sofern wir personenbezogene Daten zu anderen als den oben genannten Zwecken erheben, verarbeiten oder &uuml;bermitteln wollen, so werden wir zuvor Ihre ausdr&uuml;ckliche und freiwillige Einwilligung einholen. Die Nutzung unseres Angebots wird nicht von der Erteilung Ihrer Einwilligung abh&auml;ngig sein, soweit dies rechtlich und technisch m&ouml;glich ist.</p>
+<p>Eine einmal erteilte Einwilligung zur weitergehenden Nutzung Ihrer personenbezogenen Daten k&ouml;nnen Sie jederzeit mit Wirkung f&uuml;r die Zukunft widerrufen. Den Widerruf richten Sie bitte an:</p>
+<p>Per Post:<br/>
+ACM BUSINESS AVIATION HANDLING GmbH<br/>
+Montreal Avenue D 415<br/>
+77836 Rheinm&uuml;nster<br/>
+Deutschland</p>
+<p>Per E-Mail:<br/>
+<a class="text-olive hover:underline" href="mailto:info@acmhandling.de">info@acmhandling.de</a></p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Weitergabe personenbezogener Daten an Dritte</h2>
+<p>Entsprechend den jeweils geltenden Gesetzen und Vorschriften zum Schutz personenbezogener Daten werden alle im Rahmen unserer Dienstleistungen anfallenden und erhobenen personenbezogenen Daten nur zum Zweck der Vertragsabwicklung erhoben, verarbeitet und genutzt.</p>
+<p>Wenn wir Dritte zur Unterst&uuml;tzung unserer Gesch&auml;ftsabwicklung mit der Datenverarbeitung beauftragen, m&uuml;ssen sich diese verpflichten, sich nach unseren Datenschutzstandards zu richten und uns ein Recht einr&auml;umen, die Einhaltung dieser Standards und der gesetzlichen Vorgaben zu &uuml;berpr&uuml;fen. Rechtlich verantwortlich f&uuml;r die Einhaltung der gesetzlichen Datenschutzvorschriften bleibt auch in diesem Fall die ACM BUSINESS AVIATION HANDLING GmbH (&bdquo;Auftragsdatenverarbeitung&ldquo;).</p>
+<p>Erhebungen und &Uuml;bermittlung von personenbezogenen Daten an staatliche Einrichtungen, Beh&ouml;rden und zur Abwicklung des Luftbef&ouml;rderungsvertrages erforderlichen Dritten erfolgen nur im Rahmen zwingender Rechtsvorschriften unter Beachtung des Datenschutzes.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Sicherheitsma&szlig;nahmen</h2>
+<p>ACM BUSINESS AVIATION HANDLING GmbH hat spezifische Sicherheitsma&szlig;nahmen im technischen und organisatorischen Bereich getroffen, um Ihre pers&ouml;nlichen Daten vor Manipulationen, Verlust, Zerst&ouml;rung oder Zugriff unberechtigter Personen zu sch&uuml;tzen. Die Sicherheitsma&szlig;nahmen entsprechen dem Stand der Technik und erfahren eine fortlaufende Anpassung an neue Entwicklungen. Alle unsere Mitarbeiter, die mit personenbezogenen Daten in Ber&uuml;hrung kommen k&ouml;nnen, sind auf die Einhaltung der Datenschutzvorschriften verpflichtet und &uuml;ber die rechtlichen Vorgaben belehrt.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Aufbewahrung und L&ouml;schung personenbezogener Daten</h2>
+<p>S&auml;mtliche Ihrer bei uns gespeicherten personenbezogenen Daten werden &ndash; sobald sie f&uuml;r die Zwecke, f&uuml;r die sie erhoben wurden, nicht mehr ben&ouml;tigt werden &ndash; unmittelbar und unwiederbringlich gel&ouml;scht, sofern wir nicht aufgrund gesetzlicher Vorschriften zur Aufbewahrung verpflichtet sind. Sind wir zur Aufbewahrung verpflichtet, so werden die Daten mit Ablauf der gesetzlich vorgeschriebenen Aufbewahrungspflichten unwiederbringlich gel&ouml;scht.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Cookies</h2>
+<p>Teilweise k&ouml;nnen auf unseren Webseiten sog. &bdquo;Cookies&ldquo; zum Einsatz kommen. Dies sind kleine Textdateien, die von unserem Webserver auf Ihren Arbeitsplatzrechner &uuml;bertragen werden. Cookies dienen dazu, den genutzten Arbeitsplatzrechner beim n&auml;chsten Besuch wiederzuerkennen und dem Server mitzuteilen, wann Sie zuletzt welche Seiten unserer Homepage besucht haben. Personenbezogene Daten sind in den Cookies nicht enthalten und die Cookies werden auch nicht mit anderen bei uns gespeicherten personenbezogenen Daten verkn&uuml;pft. Cookies k&ouml;nnen lediglich den verwendeten Arbeitsplatzrechner, nicht aber die Person des Nutzers identifizieren.</p>
+<p>Sollten Sie dennoch keine Cookies annehmen wollen, erfahren Sie in der Hilfe Ihres Browsers, wie Sie die Cookie-Funktion deaktivieren k&ouml;nnen (z. B. in Mozilla Firefox unter &bdquo;Extras &rarr; Einstellungen &rarr; Datenschutz &rarr; Cookies anzeigen&ldquo;). Eine Einschr&auml;nkung der Nutzbarkeit unseres Angebotes ist damit nicht verbunden.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Webanalyse-Tool (Matomo)</h2>
+<p>Auf unseren Webseiten kommt die Webanalyse-Software Matomo zum Einsatz, die der statistischen Auswertung der Besucherzugriffe dient. Die Analyse des Nutzerverhaltens ist wichtig, da auf diese Weise die Nachfrage nach Inhalten anonymisiert analysiert und so das Angebot optimiert werden kann.</p>
+<p>Matomo verwendet sog. Cookies, Textdateien, die auf Ihrem Endger&auml;t gespeichert werden.</p>
+<p>Matomo erm&ouml;glicht das Wiedererkennen von Benutzern, die schon einmal auf der Website gewesen sind, sowie eine nicht personenbezogene Analyse des Verhaltens auf der Webseite. So k&ouml;nnen wir z. B. erkennen, von welcher Seite aus Sie auf unsere Webseite gekommen sind und welche Seiten Sie auf unserer Internetseite wie lange angesehen haben.</p>
+<p>Wir haben keinerlei Interesse daran, zu sehen, wie eine konkrete Person sich die Webseite angesehen hat. Wir haben aber ein Interesse daran zu wissen, wie sich Benutzer allgemein unsere Webseite ansehen, was sie interessiert und wo m&ouml;glicherweise Fehler bereinigt werden m&uuml;ssen, da ein Benutzer auf eine falsche oder eine leere Seite st&ouml;&szlig;t. Mit Hilfe der ermittelten Daten versuchen wir, den Service auf der Webseite entsprechend dem Nutzerverhalten anzupassen und zu optimieren.</p>
+<p>Sie haben das Recht, dieser Nutzung Ihrer Daten zu widersprechen. Sie k&ouml;nnen die Analyse des Nutzerverhaltens unterbinden, wenn Sie in Ihrem Browser das Setzen von Cookies durch diese Domain (acmhandling.de) blockieren, indem Sie z. B. eine Ausnahme im Browser einrichten. Bitte sehen Sie ggf. in der Programmhilfe nach, wie Sie dies in Ihrem Browser einrichten k&ouml;nnen.</p>
+<p>Sie haben au&szlig;erdem die M&ouml;glichkeit, jede Form von Benutzer-Analyse auf dieser Webseite k&uuml;nftig zu unterbinden, wenn Sie ein sog. Block-Cookie bzw. Opt-Out-Cookie setzen.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Verwendung Ihrer Bewerbungsdaten</h2>
+<p>Ihre pers&ouml;nlichen Bewerbungsdaten werden ausschlie&szlig;lich zweckgebunden und nur f&uuml;r das ausgeschriebene Bewerbungsverfahren verarbeitet. Eine dar&uuml;ber hinausgehende Nutzung oder Weitergabe an Dritte erfolgt nicht. Auch bei Initiativbewerbungen k&ouml;nnen Ihre Daten nur von der Personalabteilung und den in den Bewerbungsprozess eingebundenen Mitarbeitern der Fachabteilungen eingesehen werden, um Ihr Profil f&uuml;r passende Stellenangebote zu pr&uuml;fen.</p>
+<p>Eine L&ouml;schung Ihrer pers&ouml;nlichen Bewerbungsdaten erfolgt grunds&auml;tzlich automatisch drei Monate nach Abschluss des Bewerbungsverfahrens bzw. drei Monate nach Bewerbungseingang einer Initiativbewerbung, es sei denn, Sie stimmen einer l&auml;ngeren Speicherung ausdr&uuml;cklich zu.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Ansprechpartner, Recht auf Auskunft und Korrektur</h2>
+<p>Entsprechend den gesetzlichen Bestimmungen haben wir einen Datenschutzbeauftragten bestellt. Wenn Sie Fragen hinsichtlich der Verarbeitung Ihrer pers&ouml;nlichen Daten haben, k&ouml;nnen Sie sich direkt an unten stehenden Kontakt wenden:</p>
+<p><a class="text-olive hover:underline" href="mailto:datenschutz@acm.aero">datenschutz@acm.aero</a></p>
+<p>oder</p>
+<p>ACM BUSINESS AVIATION HANDLING GmbH<br/>
+Stefanie Matz<br/>
+Datenschutzbeauftragte<br/>
+Montreal Avenue D415<br/>
+77836 Rheinm&uuml;nster</p>
+<p>Telefon <a class="text-olive hover:underline" href="tel:+4972293022199">+49 7229 3022-199</a><br/>
+Telefax +49 7229 3022-180</p>
+<p>Ihnen steht auch jederzeit ein Auskunftsanspruch dar&uuml;ber zu, ob und welche personenbezogenen Daten wir &uuml;ber Sie gespeichert haben. Auf Ihren Wunsch kann die Auskunft auch elektronisch erteilt werden. Sie haben ein Recht auf L&ouml;schung/Sperrung unzul&auml;ssiger oder Korrektur unrichtiger Daten. Auf Anfrage werden wir Ihnen auch hierzu jederzeit gerne Auskunft erteilen.</p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde</h2>
+<p>Im Falle datenschutzrechtlicher Verst&ouml;&szlig;e steht dem Betroffenen ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde zu.</p>
+<p>Zust&auml;ndige Aufsichtsbeh&ouml;rde in datenschutzrechtlichen Fragen ist der Landesdatenschutzbeauftragte von Baden-W&uuml;rttemberg. Die Kontaktdaten k&ouml;nnen folgendem Link entnommen werden:</p>
+<p><a class="text-olive hover:underline break-all" href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" rel="noopener noreferrer" target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a></p>
+
+<h2 class="font-serif text-2xl text-stone-900 pt-4 font-normal">Aktualisierung dieser Datenschutzerkl&auml;rung</h2>
+<p>ACM BUSINESS AVIATION HANDLING GmbH beh&auml;lt sich vor, diese Datenschutzerkl&auml;rung bei Bedarf zur Anpassung an technische Entwicklungen oder im Zusammenhang mit dem Angebot neuer Dienstleistungen oder Produkte zu aktualisieren. Die aktuelle Version k&ouml;nnen Sie stets auf dieser Seite einsehen.</p>
 </div>
 </div>
 </section>
 </main>
-<!-- Mobile Sticky CTA -->
-<div class="mobile-sticky-cta" id="mobile-sticky-cta">
-<a class="btn-primary w-full text-center" href="mailto:info@acmhandling.de?subject=Handling-Anfrage%20ACM%20Handling" style="min-width: 0;">Handling anfragen</a>
-</div>
+
 <!-- FOOTER -->
 <footer class="bg-white text-stone-600 pt-16 sm:pt-20 pb-10 footer-safe">
 <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -1270,7 +972,7 @@
 
     const header = document.getElementById('header');
     function updateHeader() {
-      if (window.pageYOffset > 20) { header.classList.add('header-scrolled'); } else { header.classList.remove('header-scrolled'); if (desktopMenu && desktopMenu.classList.contains('show')) closeDesktopMenu(); }
+      /* legal page: keep light header permanently */
     }
     window.addEventListener('scroll', updateHeader);
     updateHeader();
